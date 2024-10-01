@@ -1,5 +1,6 @@
 return {
   'ThePrimeagen/refactoring.nvim',
+	enabled = false,
   dependencies = {
     'nvim-lua/plenary.nvim',
     'nvim-treesitter/nvim-treesitter',
@@ -24,3 +25,5 @@ return {
     end)
   end,
 }
+
+-- vim: ts=2 sts=2 sw=2 noet
