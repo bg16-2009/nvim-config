@@ -11,6 +11,7 @@ vim.keymap.set("n", "<leader>w", "<C-w>")
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<C-c>", "<cmd>nohlsearch<CR>")
 
+vim.keymap.set("n", "<leader>gx", [[:!xdg-open "%"<CR>]])
 vim.keymap.set("n", "<leader>cd", "<cmd>cd %:p:h<CR>")
 vim.keymap.set("n", "<C-M-j>", "<cmd>cnext<cr>")
 vim.keymap.set("n", "<C-M-k>", "<cmd>cprev<cr>")
