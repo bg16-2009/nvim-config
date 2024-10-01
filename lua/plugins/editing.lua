@@ -58,6 +58,8 @@ return {
 					cpp = { "clang_format" },
 					sh = { "shfmt" },
 					rust = { "rustfmt" },
+					python = { "black" },
+					typescript = { "eslint_d" },
 				},
 			})
 			require("conform").formatters.shfmt = {
