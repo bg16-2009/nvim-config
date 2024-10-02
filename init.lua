@@ -9,7 +9,7 @@ require 'vim-options'
 
 require('lazy').setup('plugins')
 
-vim.cmd.colorscheme("gruvbox-material")
+-- vim.cmd.colorscheme("gruvbox-material")
 
 require 'vim-remaps'
 require 'vim-autocmds'
