@@ -43,6 +43,7 @@ return {
 					end,
 					clangd = function()
 						require("lspconfig").clangd.setup({
+							filetypes = { "c", "cpp" },
 							capabilities = require("cmp_nvim_lsp").default_capabilities(),
 							cmd = {
 								"clangd",

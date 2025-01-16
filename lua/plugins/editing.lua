@@ -1,11 +1,4 @@
 return {
-	-- TODO: Add these plugins
-	-- firenvim
-	-- FTerm.nvim
-	-- Vim-Be-Good
-
-	"baskerville/vim-sxhkdrc",
-	"elkowar/yuck.vim",
 	"makerj/vim-pdf",
 
 	{
@@ -56,10 +49,13 @@ return {
 					lua = { "stylua" },
 					go = { "gofmt" },
 					cpp = { "clang_format" },
+					c = { "clang_format" },
+					java = { "clang_format" },
 					sh = { "shfmt" },
 					rust = { "rustfmt" },
 					python = { "black" },
 					typescript = { "eslint_d" },
+					arduino = { "clang_format" },
 				},
 			})
 			require("conform").formatters.shfmt = {

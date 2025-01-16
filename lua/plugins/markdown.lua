@@ -1,5 +1,4 @@
 return {
-	-- TODO: Add glow.nvim
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },

@@ -1,12 +1,8 @@
 return {
-	-- TODO: Decide on a colorscheme (It is set from init.lua at the moment)
 	{
-		"navarasu/onedark.nvim",
-		opts = {
-			style = "darker",
-		},
+		"stevearc/dressing.nvim",
+		opts = {},
 	},
-	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
 	{
 		"f4z3r/gruvbox-material.nvim",
 		name = "gruvbox-material",
@@ -14,8 +10,6 @@ return {
 		priority = 1000,
 		opts = {},
 	},
-	{ "maxmx03/dracula.nvim" },
-	{ "catppuccin/nvim", name = "catppuccin" },
 	{ "folke/tokyonight.nvim" },
 	{
 		"xiyaowong/transparent.nvim",
@@ -26,7 +20,7 @@ return {
 					"NvimTreeNormal",
 				},
 			})
-			vim.keymap.set("n", "<leader>tt", "<cmd>TransparentToggle<CR>")
+			vim.keymap.set("n", "<leader>me", "<cmd>TransparentToggle<CR>")
 		end,
 	},
 }

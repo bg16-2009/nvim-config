@@ -42,6 +42,10 @@ return {
 			debug = false,
 		},
 	},
+	{
+		"https://github.com/github/copilot.vim",
+		enabled = false,
+	},
 }
 
 -- vim: ts=2 sts=2 sw=2 noet
