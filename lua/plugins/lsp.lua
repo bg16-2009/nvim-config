@@ -13,23 +13,32 @@ return {
 					"black",
 					"stylua",
 					"clang-format",
+					"google-java-format",
 
 					-- LSP
-					"python-lsp-server",
+					"pyright",
 					"rust-analyzer",
 					"lua_ls",
 					"gopls",
 					"clangd",
 					"bashls",
+					"bashls",
+					"jdtls",
 				},
 				start_delay = 3000,
 			},
 		},
-		-- TODO: Configure trouble
 		{
 			"folke/trouble.nvim",
 			dependencies = { "nvim-tree/nvim-web-devicons" },
 			opts = {},
+			keys = {
+				{
+					"<leader>sd",
+					"<cmd>Trouble diagnostics toggle<cr>",
+					desc = "Diagnostics (Trouble)",
+				},
+			},
 		},
 		{ "williamboman/mason.nvim", opts = {} },
 		{
@@ -48,23 +57,6 @@ return {
 							cmd = {
 								"clangd",
 								"--fallback-style=webkit",
-							},
-						})
-					end,
-					pylsp = function()
-						require("lspconfig").pylsp.setup({
-							capabilities = require("cmp_nvim_lsp").default_capabilities(),
-							settings = {
-								configurationSources = { "flake8" },
-								pylsp = {
-									plugins = {
-										pycodestyle = {
-											enabled = true,
-											ignore = { "E203", "E701" },
-											maxLineLength = 88,
-										},
-									},
-								},
 							},
 						})
 					end,

@@ -2,7 +2,7 @@ return {
 	"makerj/vim-pdf",
 
 	{
-		"ggandor/leap.nvim",
+		url = "https://codeberg.org/andyg/leap.nvim",
 		config = function()
 			vim.keymap.set({ "n", "x", "o" }, "s", "<Plug>(leap-forward)")
 			vim.keymap.set({ "n", "x", "o" }, "S", "<Plug>(leap-backward)")
@@ -56,6 +56,7 @@ return {
 					python = { "black" },
 					typescript = { "eslint_d" },
 					arduino = { "clang_format" },
+					dart = { "dart_format" },
 				},
 			})
 			require("conform").formatters.shfmt = {

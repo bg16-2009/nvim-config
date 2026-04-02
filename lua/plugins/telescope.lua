@@ -1,8 +1,9 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
+		-- branch = "master",
 		event = "VimEnter",
-		branch = "0.1.x",
+		-- branch = "0.1.x",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"nvim-telescope/telescope-ui-select.nvim",
@@ -37,6 +38,7 @@ return {
 
 			pcall(require("telescope").load_extension, "fzf")
 			pcall(require("telescope").load_extension, "ui-select")
+			pcall(require("telescope").load_extension("flutter"))
 
 			local builtin = require("telescope.builtin")
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Find help" })
