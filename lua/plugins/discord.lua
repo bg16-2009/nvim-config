@@ -1,23 +1,21 @@
 return {
-	"andweeb/presence.nvim",
-	opts = {
-		auto_update = true,
-		neovim_image_text = "The One True Text Editor",
-		main_image = "neovim",
-		log_level = nil,
-		debounce_timeout = 10,
-		enable_line_number = false,
-		blacklist = { ".*Scratch.*", ".*notes.*" },
-		buttons = true,
-		file_assets = {},
-		show_time = false,
-
-		editing_text = "Editing %s",
-		file_explorer_text = "Browsing %s",
-		git_commit_text = "Committing changes",
-		plugin_manager_text = "Managing plugins",
-		reading_text = "Reading %s",
-		workspace_text = "Working on %s",
-		line_number_text = "Line %s out of %s",
+	{
+		"vyfor/cord.nvim",
+		build = ":Cord update",
+		opts = {
+			hooks = {
+				workspace_change = function(opts)
+					if opts.workspace == "notes" then
+						opts.manager:hide()
+					else
+						opts.manager:resume()
+					end
+				end,
+				post_activity = function(_, activity)
+					activity.timestamps.start = 1000212360 -- ¯\_(ツ)_/¯
+				end,
+			},
+		},
 	},
 }
+-- vim: ts=2 sts=2 sw=2 noet
