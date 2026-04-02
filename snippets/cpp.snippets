@@ -1,0 +1,110 @@
+snippet nof Template for stdin/stdout problems
+  #include <iostream>
+
+  #pragma GCC optimize("O3")
+  #pragma GCC optimization("Ofast,unroll-loops")
+
+  using namespace std;
+
+  #define in cin
+  #define out cout
+  #define int long long
+  #define f first
+  #define s second
+
+  signed main() {
+      cin.tie(0);
+      ios_base::sync_with_stdio(0);
+
+      ${2://}
+      return 0;
+  }
+
+snippet tpl Template for competitive programming
+  #include <fstream>
+  #include <iostream>
+  #include <vector>
+
+  #pragma GCC optimize("O3")
+  #pragma GCC optimization("Ofast,unroll-loops")
+
+  using namespace std;
+
+  ifstream fin("${1:problemName}.in");
+  ofstream fout("${1:problemName}.out");
+
+  #define in cin
+  #define out cout
+  #define int long long
+  #define f first
+  #define s second
+
+  signed main() {
+      ${2://}
+      fin.close();
+      fout.close();
+      return 0;
+  }
+
+snippet cf Template for codeforces
+  #include <iostream>
+  #include <iostream>
+  #include <vector>
+
+  #pragma GCC optimize("O3")
+  #pragma GCC optimization("Ofast,unroll-loops")
+
+  using namespace std;
+
+  #define in cin
+  #define out cout
+  #define int long long
+  #define ull unisgned long long
+  #define pb push_back
+  #define f first
+  #define s second
+  #define all(x) (x).begin(), (x).end()
+  #define n3       \
+      int a, b, c; \
+      in >> a >> b >> c;
+  #define n2    \
+      int a, b; \
+      in >> a >> b;
+  #define rv                        \
+      int n;                        \
+      in >> n;                      \
+      vector<int> v(n);             \
+      for (int i = 0; i < n; i++) { \
+          in >> v[i];               \
+      }
+  #define vdf(v)                           \
+      unordered_map<int, int> mm;          \
+      for (int i = 0; i < v.size(); i++) { \
+          mm[v[i]]++;                      \
+      }
+  #define ye out << "YES\n";
+  #define nah out << "NO\n";
+  #define chk(x) out << (x ? "YES\n" : "NO\n");
+  #define prt(x) out << x << "\n";
+  #define o0(x) max(x, 0LL)
+  #define r0 int r = 0;
+
+  void runner(){
+      ${1://}
+  }
+
+  signed main() {
+      cin.tie(0);
+      ios_base::sync_with_stdio(0);
+
+      int _;
+      in >> _;
+      while (_--) {
+          runner();
+      }
+      return 0;
+  }
+
+snippet pragmas Useful pragmas for competitive programming
+  #pragma GCC optimize("O3")
+  #pragma GCC optimization("Ofast,unroll-loops")

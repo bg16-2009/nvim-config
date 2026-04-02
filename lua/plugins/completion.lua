@@ -22,6 +22,7 @@ return {
     local cmp = require 'cmp'
     local luasnip = require 'luasnip'
     require('luasnip').config.setup {}
+		require("luasnip.loaders.from_snipmate").lazy_load({ paths = vim.fn.stdpath("config") .. "/snippets" })
 
     cmp.setup {
       snippet = {

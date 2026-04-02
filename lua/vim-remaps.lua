@@ -16,4 +16,7 @@ vim.keymap.set("n", "<leader>cd", "<cmd>cd %:p:h<CR>")
 vim.keymap.set("n", "<C-M-j>", "<cmd>cnext<cr>")
 vim.keymap.set("n", "<C-M-k>", "<cmd>cprev<cr>")
 
+
+vim.keymap.set("n", "<leader>dd", [[<cmd>!dragon-drop "%"<cr>]])
+
 -- vim: ts=2 sts=2 sw=2 noet
