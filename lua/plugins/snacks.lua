@@ -3,10 +3,14 @@ return {
 	priority = 1000,
 	lazy = false,
 	opts = {
+		-- lazy.nvim
+		dashboard = { enabled = true },
 		bigfile = { enabled = true },
 		notifier = { enabled = true },
 		indent = { enabled = true },
 		gitbrowse = { enabled = true },
+		image = { enabled = true },
+		dim = { enabled = true },
 
 		scratch = {
 			ft = function()

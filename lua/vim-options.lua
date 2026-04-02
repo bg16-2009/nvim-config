@@ -30,4 +30,8 @@ vim.opt.smartcase = true
 
 vim.opt.scrolloff = 10
 
+vim.g.netrw_scp_cmd = 'rsync -e "ssh -T"'  -- use rsync over ssh
+vim.g.netrw_use_noshell = 1                -- disable shell escaping for better speed and compatibility
+vim.g.netrw_fastbrowse = 1                 -- reduce directory listing overhead
+
 -- vim: ts=2 sts=2 sw=2 noet

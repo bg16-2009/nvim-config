@@ -3,7 +3,10 @@ return {
 	event = { "VimEnter" },
 	dependencies = {
 		"vhyrro/luarocks.nvim",
-		priority = 1000,
+		priority = 10000,
+		opts = {
+			rocks = { "dkjson" },
+		},
 		config = true,
 	},
 	config = function()
