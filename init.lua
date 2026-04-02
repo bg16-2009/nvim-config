@@ -9,9 +9,10 @@ require 'vim-options'
 
 require('lazy').setup('plugins')
 
--- vim.cmd.colorscheme("gruvbox-material")
+vim.cmd.colorscheme("catppuccin")
 
 require 'vim-remaps'
 require 'vim-autocmds'
 require 'vim-usercmds'
+require 'ccc'
 
